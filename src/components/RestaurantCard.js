@@ -2,7 +2,7 @@ import { CDN_URL } from "../utils/constants";
 
 const RestaurantCard = ({ resDetails }) => {
   const { cloudinaryImageId, name, cuisines, avgRating, costForTwo, sla } =
-    resDetails?.info;
+    resDetails;
   return (
     <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
       <img
